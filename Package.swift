@@ -33,7 +33,7 @@ let onnxRuntimeMacOSPath = "\(packageDir)/sdk/runanywhere-swift/Binaries/onnxrun
 // These versions must match the GitHub releases.
 // Updated automatically by CI/CD during releases.
 // All binaries are now released under a unified tag: v{version}
-let sdkVersion = "0.16.0-test.45"
+let sdkVersion = "0.16.0-test.50"
 
 let package = Package(
     name: "runanywhere-sdks",
@@ -186,17 +186,17 @@ let package = Package(
         .binaryTarget(
             name: "RACommonsBinary",
             url: "https://github.com/RunanywhereAI/runanywhere-sdks/releases/download/v\(sdkVersion)/RACommons-ios-v\(sdkVersion).zip",
-            checksum: "CHECKSUM_RACOMMONS" // Updated by CI/CD
+            checksum: "4b7886fbbdf6a7340f4844470b60f1e74b66478b4515593fdbb205f1f563ce2b" // Updated by CI/CD
         ),
         .binaryTarget(
             name: "RABackendLlamaCPPBinary",
             url: "https://github.com/RunanywhereAI/runanywhere-sdks/releases/download/v\(sdkVersion)/RABackendLLAMACPP-ios-v\(sdkVersion).zip",
-            checksum: "CHECKSUM_LLAMACPP" // Updated by CI/CD
+            checksum: "c7c6b960fe56cfe8f8bf037d3e17cb01d33ae2cab1bd666747d129fe824e82db" // Updated by CI/CD
         ),
         .binaryTarget(
             name: "RABackendONNXBinary",
             url: "https://github.com/RunanywhereAI/runanywhere-sdks/releases/download/v\(sdkVersion)/RABackendONNX-ios-v\(sdkVersion).zip",
-            checksum: "CHECKSUM_ONNX" // Updated by CI/CD
+            checksum: "a089ecdcde01bd868fefda9b4fa8565d72114ba5b97c53fc006258ffc2298610" // Updated by CI/CD
         ),
         .binaryTarget(
             name: "ONNXRuntimeBinary",
